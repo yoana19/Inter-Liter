@@ -1,4 +1,4 @@
-﻿package edu.school;
+package edu.school;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
@@ -192,7 +192,7 @@ public class Literature extends JFrame {
 		titleToFileName8.put("Декамерон", "h.txt");
 		titleToFileName8.put("Дон Кихот", "i.txt");
 		titleToFileName8.put("Хамлет", "j.txt");
-		titleToFileName8.put("Сонети", "gg.txt");
+		titleToFileName8.put("Сонети", "");
 		titleToFileName9.put("Пътешествията на Гъливер", "l.txt");
 		titleToFileName9.put("Лека нощ", "m.txt");
 		titleToFileName9.put("Тя иде като нощ красива", "n.txt");
@@ -308,6 +308,8 @@ public class Literature extends JFrame {
 		text.add(scrollPane, BorderLayout.CENTER);
 
 		textArea = new JTextArea();
+		textArea.setWrapStyleWord(true);
+		textArea.setLineWrap(true);
 		scrollPane.setViewportView(textArea);
 		cmbwork.setVisible(false);
 	}
